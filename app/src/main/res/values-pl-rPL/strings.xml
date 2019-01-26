@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Come2Me</string>
+    <string name="action_settings">Opcje</string>
+    <string name="ad">Dodaj znajomego:</string>
+    <string name="ed">Edytuj znajomego:</string>
+    <string name="addbtn">Dodaj</string>
+    <string name="firstname">Imię</string>
+    <string name="lastname">Nazwisko</string>
+    <string name="city">Miasto</string>
+    <string name="street">Ulica</string>
+    <string name="number">Numer domu</string>
+    <string name="ok">OK</string>
+    <string name="cancel">ANUUJ</string>
+    <string name="update">EDYTUJ</string>
+    <string name="delete">SZUKAJ</string>
+    <string name="find">SZUKAJ IMIĘ</string>
+    <string name="list">LISTA</string>
+    <string name="foto">ZDJĘCIe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

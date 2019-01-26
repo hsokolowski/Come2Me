@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Come2Me</string>
+    <string name="action_settings">Settings</string>
+    <string name="ad">Add Friend:</string>
+    <string name="ed">Edit Friend:</string>
+    <string name="addbtn">Add</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="number">Number of house</string>
+    <string name="ok">OKEY</string>
+    <string name="cancel">CANCEL</string>
+    <string name="update">EDIT</string>
+    <string name="delete">FIND</string>
+    <string name="find">Find name</string>
+    <string name="list">LIST</string>
+    <string name="foto">PHOTO</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

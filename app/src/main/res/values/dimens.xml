@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="pading24">24dp</dimen>
+    <dimen name="pading12">12dp</dimen>
+    <dimen name="pading10">10dp</dimen>
+    <dimen name="textsize">24sp</dimen>
+    <dimen name="textsize20">20sp</dimen>
+    <dimen name="margin200">200dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="textsize14" tools:ignore="MissingDefaultResource">14sp</dimen>
+
+</resources>
