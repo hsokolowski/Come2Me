@@ -67,7 +67,7 @@ public class ListFragment extends Fragment {
 
                         int position = viewHolder.getAdapterPosition();
                         Friend myWord = adapter.getFriendAtPosition(position);
-                        Toast.makeText(getContext(), "Usuwanie " +
+                        Toast.makeText(getContext(), getString(R.string.toast_del) +
                                 myWord.getFirstName(), Toast.LENGTH_LONG).show();
 
                         // Delete the word

@@ -144,7 +144,7 @@ class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder> imple
                 context.startActivity(intent);
                 MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new GPSFragment())
                         .addToBackStack(null).commit();
-                Toast.makeText(context, R.string.gps+" "+friends.get(i).getFirstName(),Toast.LENGTH_LONG).show();
+                Toast.makeText(context, context.getString(R.string.gps)+" "+friends.get(i).getFirstName(),Toast.LENGTH_LONG).show();
 
             }
         });
@@ -201,7 +201,7 @@ class FriendAdapter extends RecyclerView.Adapter<FriendAdapter.ViewHolder> imple
         MainActivity.db.friendDao().deleteFriend(f);
         friends.remove(i);
         notifyDataSetChanged();
-        Toast.makeText(context, R.string.toast_del+" "+friends.get(i).getFirstName(),Toast.LENGTH_LONG).show();
+        Toast.makeText(context, context.getString(R.string.toast_del)+" "+friends.get(i).getFirstName(),Toast.LENGTH_LONG).show();
     }
 
     @Override
