@@ -67,11 +67,11 @@ public class ListFragment extends Fragment {
 
                         int position = viewHolder.getAdapterPosition();
                         Friend myWord = adapter.getFriendAtPosition(position);
-                        Toast.makeText(getContext(), "Deleting " +
+                        Toast.makeText(getContext(), "Usuwanie " +
                                 myWord.getFirstName(), Toast.LENGTH_LONG).show();
 
                         // Delete the word
-                        MainActivity.db.friendDao().deleteFriend(myWord);
+                        FriendDB.getInstance(getContext()).friendDao().deleteFriend(myWord);
                         friendList.remove(position);
                         adapter.notifyItemRemoved(position);
 
@@ -114,7 +114,7 @@ public class ListFragment extends Fragment {
         super.onCreate(savedInstanceState);
 
         friendList=new ArrayList<>();
-        friendList=MainActivity.db.friendDao().getAllFriends();
+        friendList=FriendDB.getInstance(getContext()).friendDao().getAllFriends();
     }
 
 

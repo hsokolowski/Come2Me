@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Come2Me</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">HOME</string>
     <string name="ad">Add Friend:</string>
     <string name="ed">Edit Friend:</string>
     <string name="addbtn">Add</string>
@@ -16,6 +16,11 @@
     <string name="find">Find name</string>
     <string name="list">LIST</string>
     <string name="foto">PHOTO</string>
+    <string name="toast_edit">Edit successfully</string>
+    <string name="toast_add">Added successfully</string>
+    <string name="toast_del">Deleting</string>
+    <string name="gps">Leads to the</string>
+    <string name="notexist">Does not exist</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_maps">Map</string>

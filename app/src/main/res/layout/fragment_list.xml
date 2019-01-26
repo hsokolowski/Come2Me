@@ -4,18 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/gradient3"
     android:orientation="vertical"
-    android:background="@drawable/app8"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/redcycler_view"
         android:layout_width="match_parent"
-        android:layout_height="700dp"
+        android:layout_height="match_parent"
 
         android:layout_margin="@dimen/pading10"
         tools:itemCount="15" />
+    <Button
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="0dp" />
 
 </LinearLayout>

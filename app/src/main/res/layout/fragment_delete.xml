@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient2"
     tools:context=".DeleteFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/app8">
+        >
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/find"
@@ -34,4 +35,11 @@
 
         android:layout_marginTop="@dimen/margin200"
         tools:itemCount="3"></android.support.v7.widget.RecyclerView>
+
+    <Button
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1000dp"
+        android:layout_marginBottom="0dp" />
 </FrameLayout>

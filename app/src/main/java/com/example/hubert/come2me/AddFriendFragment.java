@@ -82,8 +82,8 @@ public class AddFriendFragment extends Fragment {
 
                 Friend f =new Friend(name,surname,c,s,n, pathToFile);
 
-                MainActivity.db.friendDao().insertAll(f);
-                Toast.makeText(getActivity(),"Added succesfully",Toast.LENGTH_SHORT).show();
+                FriendDB.getInstance(getContext()).friendDao().insertAll(f);
+                Toast.makeText(getActivity(),R.string.toast_add,Toast.LENGTH_SHORT).show();
 
                 //----------tmp------------
                 MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container,new ListFragment())

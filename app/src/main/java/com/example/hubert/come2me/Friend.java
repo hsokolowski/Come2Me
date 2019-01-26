@@ -20,7 +20,7 @@ public class Friend {
     private String street;
     @ColumnInfo(name = "number_of_house")
     private String numberHouse;
-
+    @NonNull
     @ColumnInfo(name = "path")
     public String mPath;
 

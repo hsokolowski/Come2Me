@@ -51,11 +51,11 @@ public class DeleteFragment extends Fragment {
 
 
                 String name=tv.getText().toString();
-                friendList =MainActivity.db.friendDao().find(name);
+                friendList =FriendDB.getInstance(getContext()).friendDao().find(name);
 
                 if(friendList.size()==0)
                 {
-                    Toast.makeText(getActivity(),"Dont exist",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(),R.string.notexist,Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
