@@ -75,6 +75,14 @@ public class EditFragment extends Fragment {
         bitmap = BitmapFactory.decodeFile(f.getmPath());
         imgg_edit.setImageBitmap(bitmap);
 
+        imgg_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bitmap=null;
+                imgg_edit.setImageBitmap(bitmap);
+            }
+        });
+
 
         firstname.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
         lastname.setFilters(new InputFilter[]{new InputFilter.AllCaps()});
@@ -95,13 +103,22 @@ public class EditFragment extends Fragment {
                 f.setCity(c);
                 f.setStreet(s);
                 f.setNumberHouse(n);
-                if(pathToFile!=null)
+
+                if(bitmap!=null)
                 {
-                    f.setmPath(pathToFile);
+                    if(pathToFile!="/0")
+                    {
+                        f.setmPath(pathToFile);
+                    }
+                    else
+                    {
+                        f.setmPath(p);
+                    }
+
                 }
                 else
                 {
-                    f.setmPath(p);
+                    f.setmPath("/0");
                 }
 
                 FriendDB.getInstance(getContext()).friendDao().updateFriend(f);
